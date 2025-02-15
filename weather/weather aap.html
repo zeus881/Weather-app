@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-xl font-bold text-center">Weather Forecast Application</h1>
+    </header>
+
+
+    <main class="max-w-4xl mx-auto p-6">
+        <section id="search" class="mb-6">
+            <h2 class="text-lg font-semibold mb-4">Search Weather</h2>
+            <div class="flex items-center gap-4">
+                <input type="text" id="city-input" placeholder="Enter city name" class="border rounded p-2 flex-1">
+                <button id="search-btn" class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+                <button id="current-location-btn" class="bg-gray-500 text-white px-4 py-2 rounded">Use Current Location</button>
+            </div>
+        </section>
+
+
+        <section id="weather-display" class="hidden">
+            <h2 class="text-lg font-semibold mb-4">Weather Details</h2>
+            <div id="weather-data" class="p-4 bg-white shadow rounded"></div>
+        </section>
+
+
+        <section id="extended-forecast" class="hidden mt-6">
+            <h2 class="text-lg font-semibold mb-4">5-Day Forecast</h2>
+            <div id="forecast-data" class="grid grid-cols-2 sm:grid-cols-3 gap-4"></div>
+        </section>
+    </main>
+
+
+
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2025 Weather Forecast Application </p>
+    </footer>
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
